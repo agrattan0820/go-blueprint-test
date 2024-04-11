@@ -20,6 +20,9 @@ type Server struct {
 
 func NewServer() *http.Server {
 	port, _ := strconv.Atoi(os.Getenv("PORT"))
+
+	fmt.Println("PORT:", port)
+
 	NewServer := &Server{
 		port: port,
 
